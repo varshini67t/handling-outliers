@@ -1,5 +1,10 @@
-# handling-outliers
-You are given bhp.csv which contains property prices in the city of banglore, India. You need to examine price_per_sqft column and do following,
+# **Ex-02-OUTLIER**
+
+# AIM
+
+To read the given data and remove the outliers present in it using IQR.
+
+# ALGORITHM
 
 (1) Remove outliers using IQR
 
@@ -12,6 +17,7 @@ You are given bhp.csv which contains property prices in the city of banglore, In
 (i) Using IQR detect weight outliers and print them
 
 (ii) Using IQR, detect height outliers and print them
+# CODE
 
 # output
 ![h1](https://user-images.githubusercontent.com/107982953/227729520-c488f781-570f-4bbe-945e-08d72c81fd3e.png)
@@ -22,3 +28,5 @@ You are given bhp.csv which contains property prices in the city of banglore, In
 ![h5](https://user-images.githubusercontent.com/107982953/227729768-5f6407ec-7ec5-49a6-80ba-6e8a7b565648.png)
 ![h6](https://user-images.githubusercontent.com/107982953/227729823-05cb2c90-ed55-4afb-9fc3-9f1fd6e31dd1.png)
 
+# RESULT
+Thus, we have successfully removed the outliers using IQR method.
