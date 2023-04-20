@@ -18,6 +18,54 @@ To read the given data and remove the outliers present in it using IQR.
 
 (ii) Using IQR, detect height outliers and print them
 # CODE
+#get the data
+data = pd.read_csv('/content/gdrive/MyDrive/Bengaluru_House_Data.csv')
+data.head(10)
+
+df=pd.DataFrame(data)
+median=df.quantile(0.5)
+Q1 = df.quantile(0.25)
+Q3 = df.quantile(0.75)
+IQR = Q3-Q1
+print(IQR)
+
+low=Q1-1.5*IQR
+high=Q3+1.5*IQR
+df1=df[((df>=Q1-1.5*IQR)&(df<=Q3+1.5*IQR))]
+print(df1)
+
+#get the data
+data = pd.read_csv('/content/gdrive/MyDrive/height_weight.csv')
+data.head(10)
+
+df=pd.DataFrame(data)
+median=df.quantile(0.5)
+Q1 = df.quantile(0.25)
+Q3 = df.quantile(0.75)
+IQR = Q3-Q1
+print(IQR)
+
+low=Q1-1.5*IQR
+high=Q3+1.5*IQR
+df1=df[((df>=Q1-1.5*IQR)&(df<=Q3+1.5*IQR))]
+print(df1)
+
+
+#get the data
+data = pd.read_csv('/content/gdrive/MyDrive/heights.csv')
+data.head(10)
+
+df=pd.DataFrame(data)
+median=df.quantile(0.5)
+Q1 = df.quantile(0.25)
+Q3 = df.quantile(0.75)
+IQR = Q3-Q1
+print(IQR)
+
+low=Q1-1.5*IQR
+high=Q3+1.5*IQR
+df1=df[((df>=Q1-1.5*IQR)&(df<=Q3+1.5*IQR))]
+print(df1)
 
 # output
 ![h1](https://user-images.githubusercontent.com/107982953/227729520-c488f781-570f-4bbe-945e-08d72c81fd3e.png)
